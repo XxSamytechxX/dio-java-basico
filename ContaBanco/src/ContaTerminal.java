@@ -2,7 +2,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaTerminal {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         
         System.out.println("------------------------------------------------------------------");
         System.out.println("SEJA BEM VINDO! COM APENAS ALGUMAS INFORMAÇÕES CRIAREMOS SUA CONTA");
@@ -15,9 +15,10 @@ public class ContaTerminal {
         
         System.out.println("Digite o número da Agência");
         String agencia = scanner.next();
+        scanner.nextLine();
 
         System.out.println("Digite seu nome");
-        String nome = scanner.next();
+        String nome = scanner.nextLine();
         
         System.out.println("Digite o valor do depósito inicial para abertura da conta");
         double saldo = scanner.nextDouble();
